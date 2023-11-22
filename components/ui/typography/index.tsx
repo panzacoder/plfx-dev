@@ -34,9 +34,10 @@ export type TypographyProps = React.ComponentProps<
 
 export default function Typography({
   variant = "body",
+  className = "",
   ...props
-}: TypographyProps): JSX.Element {
+}: TypographyProps & { className?: string }): JSX.Element {
   const Component = TypographyComponents[variant];
 
-  return <Component {...props} />;
+  return <Component className={className} {...props} />;
 }
