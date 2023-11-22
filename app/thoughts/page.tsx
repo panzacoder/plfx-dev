@@ -14,7 +14,7 @@ export default function ThoughtsPage() {
       <Typography variant="h1" className="text-muted-foreground">
         Random Thoughts
       </Typography>
-      <Link href="about-a-name" className="no-underline">
+      <Link href="/thoughts/about-a-name" className="no-underline">
         <Card className="m-8 p-4   hover:shadow-gray-100 transition-shadow ease-in-out delay-50">
           <CardTitle className="mb-4">what's in a name?</CardTitle>
           <CardDescription className="flex flex-col">
