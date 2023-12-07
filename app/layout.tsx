@@ -11,15 +11,15 @@ const inter = Inter({ subsets: ["latin"] });
 export const metadata: Metadata = {
   metadataBase: new URL("https://plfx.dev"),
   title: {
-    default: "plfx dev",
+    default: "plfx.dev",
     template: "%s | plfx",
   },
   description: "adventures in product development",
   openGraph: {
-    title: "plfx dev",
+    title: "plfx.dev",
     description: "adventures in product development",
     url: "https://plfx.dev",
-    siteName: "plfx dev",
+    siteName: "plfx.dev",
     locale: "en_US",
     type: "website",
   },
@@ -35,7 +35,7 @@ export const metadata: Metadata = {
     },
   },
   twitter: {
-    title: "plfx dev",
+    title: "plfx.dev",
     card: "summary_large_image",
   },
 };
@@ -48,9 +48,9 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body
-        className={`${inter.className} antialiased pt-8 h-screen grid grid-rows-[1fr_min-content]`}
+        className={`${inter.className} antialiased pt-8 w-bleed h-screen grid grid-rows-[1fr_min-content]`}
       >
-        <main className=" max-w-2xl mx-4 lg:mx-auto min-w-0 mt-6 flex flex-col px-2 md:px-0">
+        <main className="max-w-2xl w-full mx-2 lg:mx-auto mt-6 flex flex-col px-2 md:px-0">
           <TooltipProvider>
             <Navbar />
             {children}

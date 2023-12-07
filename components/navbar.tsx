@@ -52,7 +52,7 @@ function NavItem({ path, name }: { path: string; name: string }) {
       key={path}
       href={path}
       className={clsx(
-        "no-underline transition-all hover:text-neutral-800 dark:hover:text-neutral-200 flex align-middle",
+        "no-underline transition-all hover:text-neutral-200 dark:hover:text-neutral-200 flex align-middle",
         {
           "text-neutral-500": !isActive,
         },
