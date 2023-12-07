@@ -6,7 +6,6 @@ import {
 } from "@/components/ui/card";
 import { Link } from "@/components/ui/link";
 import Typography from "@/components/ui/typography";
-import { List } from "@/components/ui/typography/list";
 
 export default function ThoughtsPage() {
   return (
