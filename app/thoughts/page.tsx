@@ -15,7 +15,7 @@ export default function ThoughtsPage() {
         Random Thoughts
       </Typography>
       <Link href="/thoughts/about-a-name" className="no-underline">
-        <Card className="m-8 p-4   hover:shadow-gray-100 transition-shadow ease-in-out delay-50">
+        <Card className=" my-8 p-4 hover:shadow-gray-100 transition-shadow ease-in-out delay-50">
           <CardTitle className="mb-4">what's in a name?</CardTitle>
           <CardDescription className="flex flex-col">
             Every story starts with a title.
