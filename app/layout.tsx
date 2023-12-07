@@ -4,6 +4,7 @@ import "./globals.css";
 import { Navbar } from "@/components/navbar";
 import { Footer } from "@/components/footer";
 import { TooltipProvider } from "@/components/ui/tooltip";
+import { BookMeetingButton } from "@/components/book-meeting-button";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -57,6 +58,8 @@ export default function RootLayout({
             {/* <SpeedInsights /> */}
           </TooltipProvider>
         </main>
+        <BookMeetingButton />
+
         <Footer />
       </body>
     </html>

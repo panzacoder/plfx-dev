@@ -1,7 +1,6 @@
 import { Tooltip, TooltipContent, TooltipTrigger } from "./tooltip";
 import { Link, LinkProps } from "./link";
 import Typography from "./typography";
-import { ReactNode } from "react";
 
 export function OutlinkIcon({
   children,
@@ -14,7 +13,7 @@ export function OutlinkIcon({
         <Link
           href={href}
           target="_blank"
-          buttonVariant={{ variant: "ghost", size: "icon" }}
+          buttonProps={{ variant: "ghost", size: "icon" }}
         >
           {children}
         </Link>

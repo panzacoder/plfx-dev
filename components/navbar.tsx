@@ -3,8 +3,8 @@
 import { motion, LayoutGroup } from "framer-motion";
 import { usePathname } from "next/navigation";
 import { Suspense } from "react";
-import Link from "next/link";
 import clsx from "clsx";
+import { Link } from "@/components/ui/link";
 
 const navItems = {
   "/": {
@@ -52,7 +52,7 @@ function NavItem({ path, name }: { path: string; name: string }) {
       key={path}
       href={path}
       className={clsx(
-        "transition-all hover:text-neutral-800 dark:hover:text-neutral-200 flex align-middle",
+        "no-underline transition-all hover:text-neutral-800 dark:hover:text-neutral-200 flex align-middle",
         {
           "text-neutral-500": !isActive,
         },

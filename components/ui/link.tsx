@@ -5,16 +5,16 @@ import clsx from "clsx";
 export type LinkProps = React.ComponentProps<typeof NextLink>;
 export function Link({
   className = "",
-  buttonVariant,
+  buttonProps,
   ...props
 }: LinkProps & {
-  buttonVariant?: ButtonVariantProps;
+  buttonProps?: ButtonVariantProps;
 }): JSX.Element {
   return (
     <NextLink
       className={clsx(
-        buttonVariant
-          ? buttonVariants(buttonVariant)
+        buttonProps
+          ? buttonVariants(buttonProps)
           : "underline underline-offset-2 decoration-from-font hover:decoration-gray-400",
 
         className,
