@@ -18,26 +18,37 @@ const navItems = {
   },
 };
 
+const secondaryNavItems = {
+  "/support": {
+    name: "support",
+  },
+};
+
 export function Navbar(): JSX.Element {
   return (
-    <aside className="-ml-[8px] mb-16 tracking-tight">
+    <div className=" mb-16 tracking-tight">
       <div className="lg:sticky lg:top-20">
         <LayoutGroup>
           <nav
-            className="flex flex-row items-start relative px-0 pb-0 fade md:overflow-auto scroll-pr-6 md:relative"
+            className="grid grid-cols-2 items-start relative px-0 pb-0 fade md:overflow-auto scroll-pr-6 md:relative w-full"
             id="nav"
           >
-            <div className="flex flex-row space-x-0 pr-10">
+            <div className="flex flex-row space-x-0 pr-10 w-full">
               <Suspense fallback={null}>
                 {Object.entries(navItems).map(([path, { name }]) => {
                   return <NavItem key={path} path={path} name={name} />;
                 })}
               </Suspense>
             </div>
+            <div className="flex flex-row space-x-0 pr-10 justify-end w-full">
+              {Object.entries(secondaryNavItems).map(([path, { name }]) => {
+                return <NavItem key={path} path={path} name={name} />;
+              })}
+            </div>
           </nav>
         </LayoutGroup>
       </div>
-    </aside>
+    </div>
   );
 }
 
