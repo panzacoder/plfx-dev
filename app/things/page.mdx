@@ -7,42 +7,53 @@ import {
   CardHeader,
   CardTitle,
 } from "@/components/ui/card"
+import { Badge } from "@/components/ui/badge"
+import { ProjectCard } from "./project-card"
 
-## <Lead>Current Projects</Lead>
+<ProjectCard title="Family Care Circle" link="https://familycarecircle.com" tags={['Nativewind', 'NextJS 14', 'Expo 50', 'Expo Router', 'Universal', 'Figma']}>
+  - Complete app redesign with design system establishment.
+  - Rearchitect frontend code (web and native) to improve UX ability to iterate on functionality. From separate projects of framework-less React and React Native, to a monorepo with NextJS, Expo, Expo Router, Tailwind & Nativewind.
+  - Redevelop business strategy for the next 12 months, focusing on monetization and narrowing in on a target vertical.
+</ProjectCard>
 
-<Card>
-  <CardHeader>
-    <CardTitle>[Family Care Circle](https://familycarecircle.com)</CardTitle>
-  </CardHeader>
+<ProjectCard title="PLFX Studio" link="https://plfx.studio" tags={['NextJS', 'MUI', 'Design', 'Netlify Forms']}>
+  - Design and iterate on a new website for a small business that was still defining its brand.
+  - Established customer intake through Netlify forms, Zapier, and Notion.
+  - Create a web layout that highlights the business's unique features, working with many videos simultaneously.
+</ProjectCard>
 
-  <CardContent>
-    This is a unique project that I am currently engaged in, with a focus on two areas in particular:
-    - Spearhead creation of the a B2B unit of the business, ending in a pilot with our first customer
-    - Oversee a general redesign of the main application, most notably making the app more intuitive for the average user.
-  </CardContent>
-</Card>
 
-<br />
-<br />
-<br />
-## <Lead>Prior Art</Lead>
-<br />
+<Lead className='pt-8'>As part of [Headway.io](https://headway.io)</Lead>
 
-###### As part of [Headway.io](https://headway.io)
+<ProjectCard title="[Stealth E-commerce app]" tags={['NextJS 13', 'RSC', 'NestJS', 'Shopify', 'Prisma']}>
+  - Brought greenfield project from 0-1, assisting the client's first and second head of engineering in establishing app architecture and tooling. 
+  - Solved novel problems (particularly around authentication) with Shopify's App Bridge API and NextJS Server Components.
+  - Ensured the client could maintain productivity while pivoting on staffing 2 months into the project, seeing 100% turnover of in-house engineering team.
+</ProjectCard>
 
-<Card>
-  <CardHeader>
-    <CardTitle>[Lightstep.com](https://lightstep.com)</CardTitle>
-  </CardHeader>
+<ProjectCard title='Shipwright Token Navigator' link="https://www.shipwright.design/" tags={['Design Systems', 'Figma Plugin & Widget', 'Design Tokens', 'Monorepo']}>
+  - Born from a hack-week prototype, I led a team of 5 to build a design token management system, embedded directly into Figma as a widget. 
+  - The project was roughly 80% complete when I left Headway, but was already used to some success by the our team to jumpstart several new projects.
+  - The project included a fully-fledged system of coded components based in MUI, as well as starters that could accept customized design tokens into React, Rails, Web components, and more.
+</ProjectCard>
 
-  <CardContent>
-    Built the observability startup's marketing site from scratch, working to ensure 3 generations of content teams were productive.
-    <br />
-    #### Stack
-    - GatsbyJS
-    - Contentful
-    - Algolia
-    - Netlify
-  </CardContent>
-</Card>
+<ProjectCard title="Handshake" link="https://joinhandshake.com/" tags={['React', 'Typescript', 'Rails', 'Sift', 'Prototyping']}>
+  - Joined a squad at Handshake for 6 months, assisting them in implementing [Sift](https://sift.com/products/digital-trust-safety-platform), a fraud detection system.
+  - Helped build a rapid prototype of a new & flexible Typescript-based framework for the Job board multi-page form design. 
+</ProjectCard>
 
+
+<ProjectCard title="Kaladin" link="https://www.designsystemreset.com/design-system-case-study-kaladin" tags={['Storybook', 'Typescript', 'MUI', 'GatsbyJS']}>
+  - Built a design system for a startup in the crypto trading space, utilizing Storybook & Gatsby as the deliverable.
+  - As part of this project, mentored a junior developer in the use of Storybook, Gatsby, and MUI. 
+</ProjectCard>
+
+<ProjectCard title="Lightstep.com | ServiceNow" link="https://lightstep.com" tags={['GatsbyJS', 'Contentful', 'Algolia', 'Netlify', 'MUI']}>
+  - Built the observability startup's marketing site from scratch, as well as documentation platform for open source software.
+  - Train client developers and content marketers, integrating several new platforms during an aquisition by ServiceNow.
+  - Maintained a complex client relationship, providing documentation, training, architecture decisions over 3 years of ongoing work.
+</ProjectCard>
+
+<ProjectCard title="Roostify" link="https://www.headway.io/case-study/roostify" tags={['Ruby', 'Rails', 'React']}>
+  - Worked on a small team to assist Roostify with integrating their workflows with a major world bank's mortgage process.
+</ProjectCard>
