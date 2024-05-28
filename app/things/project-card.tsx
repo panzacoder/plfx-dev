@@ -7,12 +7,14 @@ export type ProjectCardProps = {
   title: string;
   link?: string;
   tags: string[];
+  active?: boolean;
   children: React.ReactNode;
 };
-export function ProjectCard({ title, link, tags, children }: ProjectCardProps) {
+export function ProjectCard({ title, link, tags, active, children }: ProjectCardProps) {
   return (
     <Card className="my-2">
       <CardHeader className="flex flex-col gap-2">
+        {active && <Badge variant='accent' className='flex justify-center'>Active Project</Badge>}
         <CardTitle className="flex flex-row gap-2">
           {title}
           {link && (

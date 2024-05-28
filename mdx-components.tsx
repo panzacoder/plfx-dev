@@ -25,7 +25,7 @@ export function useMDXComponents(components: MDXComponents): MDXComponents {
     inlineCode: ({ children }) => (
       <Typography variant="inlineCode">{children}</Typography>
     ),
-    a: ({ children, href = "" }) => <Link href={href}>{children}</Link>,
+    a: ({ children, href = "" }) => <Link href={href} className='underline text-primary hover:text-foreground/90'>{children}</Link>,
     img: ({ src = "", alt = "" }) => (
       <div>
         <Image

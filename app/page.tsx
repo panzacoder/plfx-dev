@@ -15,7 +15,7 @@ export default function HomePage() {
       <h1>
         <Tooltip>
           <TooltipTrigger>
-            <Typography variant="lead">plfx dev</Typography>
+            <Typography variant="lead" className="text-accent">plfx dev</Typography>
           </TooltipTrigger>
           <TooltipContent>
             <Typography variant="body">

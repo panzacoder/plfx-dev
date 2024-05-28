@@ -5,7 +5,7 @@ import { FeatureCard } from "./feature-card";
 
 export default function ThoughtsPage() {
   return (
-    <div className="grid grid-cols-3 gap-4">
+    <div className="grid grid-cols-2 md:grid-cols-3 gap-4">
       <div className="flex flex-col align-center col-span-2 gap-4">
         <Typography variant="h1" className="text-muted-foreground mb-1">
           my thoughts
@@ -20,7 +20,7 @@ export default function ThoughtsPage() {
       <div className="col-span-1 flex flex-col gap-4 border-l-muted-foreground">
         <Typography
           variant="h2"
-          className="text-muted-foreground pt-2 underline"
+          className="text-muted-foreground/90 pt-2"
         >
           featured in
         </Typography>
