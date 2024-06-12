@@ -1,13 +1,13 @@
-import { Link } from "@/components/ui/link";
-import { OutlinkIcon } from "@/components/ui/outlink-icon";
+import { Link } from '@/components/ui/link'
+import { OutlinkIcon } from '@/components/ui/outlink-icon'
 import {
   Tooltip,
   TooltipContent,
-  TooltipTrigger,
-} from "@/components/ui/tooltip";
-import Typography from "@/components/ui/typography";
-import { Github, Linkedin, Mail } from "lucide-react";
-import Image from "next/image";
+  TooltipTrigger
+} from '@/components/ui/tooltip'
+import Typography from '@/components/ui/typography'
+import { Github, Linkedin, Mail } from 'lucide-react'
+import Image from 'next/image'
 
 export default function HomePage() {
   return (
@@ -15,7 +15,9 @@ export default function HomePage() {
       <h1>
         <Tooltip>
           <TooltipTrigger>
-            <Typography variant="lead" className="text-accent">plfx dev</Typography>
+            <Typography variant="lead" className="text-accent">
+              plfx dev
+            </Typography>
           </TooltipTrigger>
           <TooltipContent>
             <Typography variant="body">
@@ -26,8 +28,8 @@ export default function HomePage() {
       </h1>
       adventures in web development
       <hr className="my-4" />
-      <div className="grid grid-cols-1 grid-flow-row grid-reverse md:grid-cols-[300px_1fr] place-items-center">
-        <div className="text-lg order-2 md:order-1">
+      <div className="grid-reverse grid grid-flow-row grid-cols-1 place-items-center md:grid-cols-[300px_1fr]">
+        <div className="order-2 text-lg md:order-1">
           <Typography variant="h2" className="text-center md:text-start">
             👋 I'm Jake.
           </Typography>
@@ -35,8 +37,8 @@ export default function HomePage() {
             <Typography variant="body">
               I build for the web.
               <br />
-              This site is a collection of the{" "}
-              <Link href="/things">things</Link> I've built and my{" "}
+              This site is a collection of the{' '}
+              <Link href="/things">things</Link> I've built and my{' '}
               <Link href="/thoughts">thoughts</Link> about the web and the
               world.
             </Typography>
@@ -65,9 +67,9 @@ export default function HomePage() {
           alt="Jake Hebert Headshot"
           width={200}
           height={200}
-          className="rounded-full order-1 md:order-2"
+          className="order-1 rounded-full md:order-2"
         />
       </div>
     </>
-  );
+  )
 }

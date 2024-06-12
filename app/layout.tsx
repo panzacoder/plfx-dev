@@ -5,6 +5,8 @@ import { Navbar } from "@/components/navbar";
 import { Footer } from "@/components/footer";
 import { TooltipProvider } from "@/components/ui/tooltip";
 import { BookMeetingButton } from "@/components/book-meeting-button";
+import { Analytics } from '@vercel/analytics/react';
+import { SpeedInsights } from '@vercel/speed-insights/next';
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -54,8 +56,8 @@ export default function RootLayout({
           <TooltipProvider>
             <Navbar />
             {children}
-            {/* <Analytics /> */}
-            {/* <SpeedInsights /> */}
+            <Analytics />
+            <SpeedInsights />
           </TooltipProvider>
         </main>
         <BookMeetingButton />
