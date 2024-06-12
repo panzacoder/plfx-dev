@@ -1,14 +1,14 @@
-import { H1 } from "./h1";
-import { H2 } from "./h2";
-import { H3 } from "./h3";
-import { H4 } from "./h4";
-import { H5 } from "./h5";
-import { H6 } from "./h6";
-import { Body } from "./body";
-import { List } from "./list";
-import { Blockquote } from "./blockquote";
-import { InlineCode } from "./inline-code";
-import { Lead } from "./lead";
+import { H1 } from './h1'
+import { H2 } from './h2'
+import { H3 } from './h3'
+import { H4 } from './h4'
+import { H5 } from './h5'
+import { H6 } from './h6'
+import { Body } from './body'
+import { List } from './list'
+import { Blockquote } from './blockquote'
+import { InlineCode } from './inline-code'
+import { Lead } from './lead'
 
 const TypographyComponents = {
   h1: H1,
@@ -21,23 +21,23 @@ const TypographyComponents = {
   list: List,
   blockquote: Blockquote,
   inlineCode: InlineCode,
-  lead: Lead,
-} as const;
+  lead: Lead
+} as const
 
-type TypographyVariants = keyof typeof TypographyComponents;
+type TypographyVariants = keyof typeof TypographyComponents
 
 export type TypographyProps = React.ComponentProps<
   (typeof TypographyComponents)[TypographyVariants]
 > & {
-  variant: TypographyVariants;
-};
+  variant: TypographyVariants
+}
 
 export default function Typography({
-  variant = "body",
-  className = "",
+  variant = 'body',
+  className = '',
   ...props
 }: TypographyProps & { className?: string }): JSX.Element {
-  const Component = TypographyComponents[variant];
+  const Component = TypographyComponents[variant]
 
-  return <Component className={className} {...props} />;
+  return <Component className={className} {...props} />
 }

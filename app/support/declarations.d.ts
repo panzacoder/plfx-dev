@@ -1,5 +1,5 @@
 declare namespace JSX {
   interface IntrinsicElements {
-    "stripe-buy-button": any;
+    'stripe-buy-button': any
   }
 }

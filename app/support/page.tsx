@@ -6,5 +6,5 @@ export default function Support() {
         publishable-key="pk_live_51OKlQUGqliHyrN27FxoVhgpVwWPxhU12uL1hRIrmDKbF88biTNW4cmDpp42d6oApZRC1UkqweHKZTVqBYJt0k3h40071apoveA"
       ></stripe-buy-button>
     </div>
-  );
+  )
 }

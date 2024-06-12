@@ -2,28 +2,28 @@ import {
   Card,
   CardContent,
   CardDescription,
-  CardTitle,
-} from "@/components/ui/card";
-import { Link } from "@/components/ui/link";
+  CardTitle
+} from '@/components/ui/card'
+import { Link } from '@/components/ui/link'
 
 type BlogCardProps = {
-  title: string;
-  description: string;
-  date: string;
-  href: string;
-};
+  title: string
+  description: string
+  date: string
+  href: string
+}
 export function BlogCard({ title, description, date, href }: BlogCardProps) {
   return (
     <Link href={href} className="no-underline hover:underline">
-      <Card className="p-4 w-max">
+      <Card className="w-max p-4">
         <CardTitle className="mb-4">{title}</CardTitle>
-        <CardDescription className="flex flex-col text-md">
+        <CardDescription className="text-md flex flex-col">
           {description}
         </CardDescription>
-        <CardContent className="p-0 mt-2 text-sm text-muted-foreground">
+        <CardContent className="mt-2 p-0 text-sm text-muted-foreground">
           {date}
         </CardContent>
       </Card>
     </Link>
-  );
+  )
 }

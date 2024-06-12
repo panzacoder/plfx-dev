@@ -3,7 +3,7 @@ export function TH({ children }: { children: React.ReactNode }) {
     <th className="border px-4 py-2 text-left font-bold [&[align=center]]:text-center [&[align=right]]:text-right">
       {children}
     </th>
-  );
+  )
 }
 
 export function TD({ children }: { children: React.ReactNode }) {
@@ -11,19 +11,19 @@ export function TD({ children }: { children: React.ReactNode }) {
     <td className="border px-4 py-2 text-left [&[align=center]]:text-center [&[align=right]]:text-right">
       {children}
     </td>
-  );
+  )
 }
 
 export function TR({ children }: { children: React.ReactNode }) {
-  return <tr className="m-0 border-t p-0 even:bg-muted">{children}</tr>;
+  return <tr className="m-0 border-t p-0 even:bg-muted">{children}</tr>
 }
 
 export function Table({
   headers,
-  children,
+  children
 }: {
-  headers: string[];
-  children: React.ReactNode;
+  headers: string[]
+  children: React.ReactNode
 }) {
   return (
     <div className="my-6 w-full overflow-y-auto">
@@ -38,5 +38,5 @@ export function Table({
         <tbody>{children}</tbody>
       </table>
     </div>
-  );
+  )
 }

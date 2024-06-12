@@ -1,7 +1,7 @@
-import type { MDXComponents } from "mdx/types";
-import Typography from "@/components/ui/typography";
-import Link from "next/link";
-import Image from "next/image";
+import type { MDXComponents } from 'mdx/types'
+import Typography from '@/components/ui/typography'
+import Link from 'next/link'
+import Image from 'next/image'
 
 export function useMDXComponents(components: MDXComponents): MDXComponents {
   return {
@@ -25,8 +25,15 @@ export function useMDXComponents(components: MDXComponents): MDXComponents {
     inlineCode: ({ children }) => (
       <Typography variant="inlineCode">{children}</Typography>
     ),
-    a: ({ children, href = "" }) => <Link href={href} className='underline text-primary hover:text-foreground/90'>{children}</Link>,
-    img: ({ src = "", alt = "" }) => (
+    a: ({ children, href = '' }) => (
+      <Link
+        href={href}
+        className="text-primary underline hover:text-foreground/90"
+      >
+        {children}
+      </Link>
+    ),
+    img: ({ src = '', alt = '' }) => (
       <div>
         <Image
           src={src}
@@ -37,6 +44,6 @@ export function useMDXComponents(components: MDXComponents): MDXComponents {
           className="mx-8"
         />
       </div>
-    ),
-  };
+    )
+  }
 }

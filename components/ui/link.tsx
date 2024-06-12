@@ -1,25 +1,25 @@
-import NextLink from "next/link";
-import { ButtonVariantProps, buttonVariants } from "./button";
-import clsx from "clsx";
+import NextLink from 'next/link'
+import { ButtonVariantProps, buttonVariants } from './button'
+import clsx from 'clsx'
 
-export type LinkProps = React.ComponentProps<typeof NextLink>;
+export type LinkProps = React.ComponentProps<typeof NextLink>
 export function Link({
-  className = "",
+  className = '',
   buttonProps,
   ...props
 }: LinkProps & {
-  buttonProps?: ButtonVariantProps;
+  buttonProps?: ButtonVariantProps
 }): JSX.Element {
   return (
     <NextLink
       className={clsx(
         buttonProps
           ? buttonVariants(buttonProps)
-          : "underline underline-offset-2 decoration-from-font hover:decoration-gray-400",
+          : 'underline decoration-from-font underline-offset-2 hover:decoration-gray-400',
 
-        className,
+        className
       )}
       {...props}
     />
-  );
+  )
 }

@@ -1,13 +1,13 @@
-import Typography from "@/components/ui/typography";
+import Typography from '@/components/ui/typography'
 
-import { BlogCard } from "./blog-card";
-import { FeatureCard } from "./feature-card";
+import { BlogCard } from './blog-card'
+import { FeatureCard } from './feature-card'
 
 export default function ThoughtsPage() {
   return (
-    <div className="grid grid-cols-2 md:grid-cols-3 gap-4">
-      <div className="flex flex-col align-center col-span-2 gap-4">
-        <Typography variant="h1" className="text-muted-foreground mb-1">
+    <div className="grid grid-cols-2 gap-4 md:grid-cols-3">
+      <div className="align-center col-span-2 flex flex-col gap-4">
+        <Typography variant="h1" className="mb-1 text-muted-foreground">
           my thoughts
         </Typography>
         <BlogCard
@@ -18,10 +18,7 @@ export default function ThoughtsPage() {
         />
       </div>
       <div className="col-span-1 flex flex-col gap-4 border-l-muted-foreground">
-        <Typography
-          variant="h2"
-          className="text-muted-foreground/90 pt-2"
-        >
+        <Typography variant="h2" className="pt-2 text-muted-foreground/90">
           featured in
         </Typography>
 
@@ -42,5 +39,5 @@ export default function ThoughtsPage() {
         />
       </div>
     </div>
-  );
+  )
 }

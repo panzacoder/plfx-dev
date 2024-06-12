@@ -1,11 +1,11 @@
-import clsx from "clsx";
+import clsx from 'clsx'
 
 export function Body({
   children,
-  className,
+  className
 }: {
-  children: React.ReactNode;
-  className: string;
+  children: React.ReactNode
+  className: string
 }) {
-  return <p className={clsx("leading-7", className)}>{children}</p>;
+  return <p className={clsx('leading-7', className)}>{children}</p>
 }

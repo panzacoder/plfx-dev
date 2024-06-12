@@ -1,4 +1,3 @@
-
 module.exports = {
   extends: [
     'next/core-web-vitals',
@@ -16,9 +15,9 @@ module.exports = {
   root: true,
   overrides: [
     {
-      "files": ["**/*.ts", "**/*.tsx"],
-      "rules": {
-        "react/no-unescaped-entities": "off"
+      files: ['**/*.ts', '**/*.tsx'],
+      rules: {
+        'react/no-unescaped-entities': 'off'
       }
     }
   ]

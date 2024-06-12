@@ -1,20 +1,20 @@
-import clsx from "clsx";
+import clsx from 'clsx'
 
 export function H6({
   children,
-  className,
+  className
 }: {
-  children: React.ReactNode;
-  className?: string;
+  children: React.ReactNode
+  className?: string
 }) {
   return (
     <h6
       className={clsx(
-        "scroll-m-20 text-md font-semibold tracking-tight",
-        className,
+        'text-md scroll-m-20 font-semibold tracking-tight',
+        className
       )}
     >
       {children}
     </h6>
-  );
+  )
 }

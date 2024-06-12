@@ -1,15 +1,15 @@
-import clsx from "clsx";
+import clsx from 'clsx'
 
 export function Blockquote({
   children,
-  className,
+  className
 }: {
-  children: React.ReactNode;
-  className?: string;
+  children: React.ReactNode
+  className?: string
 }) {
   return (
-    <blockquote className={clsx("mt-6 border-l-2 pl-6 italic", className)}>
+    <blockquote className={clsx('mt-6 border-l-2 pl-6 italic', className)}>
       {children}
     </blockquote>
-  );
+  )
 }

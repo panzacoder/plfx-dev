@@ -1,15 +1,15 @@
-import clsx from "clsx";
+import clsx from 'clsx'
 
 export function Lead({
   children,
-  className,
+  className
 }: {
-  children: React.ReactNode;
-  className?: string;
+  children: React.ReactNode
+  className?: string
 }) {
   return (
-    <p className={clsx("text-xl text-muted-foreground", className)}>
+    <p className={clsx('text-xl text-muted-foreground', className)}>
       {children}
     </p>
-  );
+  )
 }

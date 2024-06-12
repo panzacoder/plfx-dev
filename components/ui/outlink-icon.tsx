@@ -1,11 +1,11 @@
-import { Tooltip, TooltipContent, TooltipTrigger } from "./tooltip";
-import { Link, LinkProps } from "./link";
-import Typography from "./typography";
+import { Tooltip, TooltipContent, TooltipTrigger } from './tooltip'
+import { Link, LinkProps } from './link'
+import Typography from './typography'
 
 export function OutlinkIcon({
   children,
   href,
-  tooltip,
+  tooltip
 }: LinkProps & { tooltip: string }) {
   return (
     <Tooltip>
@@ -13,7 +13,7 @@ export function OutlinkIcon({
         <Link
           href={href}
           target="_blank"
-          buttonProps={{ variant: "ghost", size: "icon" }}
+          buttonProps={{ variant: 'ghost', size: 'icon' }}
         >
           {children}
         </Link>
@@ -22,5 +22,5 @@ export function OutlinkIcon({
         <Typography variant="body">{tooltip}</Typography>
       </TooltipContent>
     </Tooltip>
-  );
+  )
 }
