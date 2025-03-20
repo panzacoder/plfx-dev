@@ -21,6 +21,9 @@ const navItems = {
 const secondaryNavItems = {
   '/support': {
     name: 'support'
+  },
+  '/policies': {
+    name: 'policies'
   }
 }
 

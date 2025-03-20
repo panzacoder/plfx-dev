@@ -2,7 +2,7 @@ import { Link } from './ui/link'
 
 export function Footer() {
   return (
-    <footer className="flex w-full flex-col items-center justify-center pt-8 text-gray-500">
+    <footer className="flex w-full items-center justify-center pt-8 text-gray-500">
       <span>
         <span className="hidden md:inline">
           {'plfx.dev and '}
